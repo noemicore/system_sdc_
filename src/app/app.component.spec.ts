@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'system_sdc_' title`, () => {
+  it(`should have the 'system_sdc' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('system_sdc_');
+    expect(app.title).toEqual('system_sdc');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, system_sdc_');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, system_sdc');
   });
 });
